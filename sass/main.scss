@@ -1,5 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 600px;
+}
+
 .action-btn {
   border-radius: 50%;
+  border-style: none;
+  height: 100px;
+  width: 100px;
 }
 
 .one {
@@ -16,4 +32,8 @@
 
 .four {
   background-color: yellow;
+}
+
+.controls {
+  background-color: gray;
 }
