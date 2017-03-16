@@ -1,3 +1,9 @@
+$blue: #159BCA;
+$red: #CD4230;
+$green: #298E44;
+$yellow: #E1AD23;
+$control-panel: #F5F6F6;
+
 * {
   box-sizing: border-box;
 }
@@ -34,19 +40,35 @@ body {
 }
 
 .one {
-  background-color: #159BCA;
+  background-color: $blue;
+
+  &:hover {
+    background-color: lighten($blue, 15%);
+  }
 }
 
 .two {
-  background-color: #CD4230;
+  background-color: $red;
+
+  &:hover {
+    background-color: lighten($red, 15%);
+  }
 }
 
 .three {
-  background-color: #298E44;
+  background-color: $green;
+
+  &:hover {
+    background-color: lighten($green, 18%);
+  }
 }
 
 .four {
-  background-color: #C9AA2A;
+  background-color: $yellow;
+
+  &:hover {
+    background-color: lighten($yellow, 15%);
+  }
 }
 
 .controls {
