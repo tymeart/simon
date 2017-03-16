@@ -47,10 +47,32 @@ body {
     background-color: #eac666; }
 
 .controls {
-  background-color: gray;
+  align-items: center;
+  background-color: #F5F6F6;
+  border: 1px #C5C8C8 solid;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
   width: 400px; }
 
-.message {
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 80px;
-  width: 250px; }
+.count {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 8px; }
+  .count__number {
+    font-size: 1.7em; }
+
+.start,
+.strict {
+  background-color: #F5F6F6;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 5px 10px; }
+
+.start {
+  border-color: #FE9F8A; }
+
+.strict {
+  border-color: #FCD647; }
