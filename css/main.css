@@ -2,6 +2,7 @@
   box-sizing: border-box; }
 
 body {
+  background-color: #FDF5DA;
   margin: 0; }
 
 .container {
@@ -26,16 +27,16 @@ body {
   width: 200px; }
 
 .one {
-  background-color: green; }
+  background-color: #21B5E9; }
 
 .two {
-  background-color: red; }
+  background-color: #E75744; }
 
 .three {
-  background-color: blue; }
+  background-color: #3AA456; }
 
 .four {
-  background-color: yellow; }
+  background-color: #EECC40; }
 
 .controls {
   background-color: gray;
