@@ -5,6 +5,9 @@ body {
   background-color: #FDF5DA;
   margin: 0; }
 
+button:hover {
+  cursor: pointer; }
+
 .container {
   align-items: center;
   display: flex;
