@@ -1,7 +1,7 @@
-$blue: #159BCA;
+$blue: #153ECA;
 $red: #CD4230;
 $green: #298E44;
-$yellow: #E1AD23;
+$yellow: #EFCF2E;
 $control-panel: #F5F6F6;
 $start-button: #FE9F8A;
 $strict-switch: #FCD647;
@@ -65,7 +65,7 @@ button:hover {
   background-color: $green;
 
   &:hover {
-    background-color: lighten($green, 18%);
+    background-color: lighten($green, 15%);
   }
 }
 

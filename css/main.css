@@ -30,9 +30,9 @@ button:hover {
   width: 200px; }
 
 .one {
-  background-color: #159BCA; }
+  background-color: #153ECA; }
   .one:hover {
-    background-color: #40bfeb; }
+    background-color: #4067eb; }
 
 .two {
   background-color: #CD4230; }
@@ -42,12 +42,12 @@ button:hover {
 .three {
   background-color: #298E44; }
   .three:hover {
-    background-color: #48ca6b; }
+    background-color: #3dc762; }
 
 .four {
-  background-color: #E1AD23; }
+  background-color: #EFCF2E; }
   .four:hover {
-    background-color: #eac666; }
+    background-color: #f4df75; }
 
 .controls {
   align-items: center;
