@@ -2,7 +2,7 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #FDF5DA;
+  background-color: #FDFCF6;
   margin: 0; }
 
 button:hover {
@@ -51,8 +51,8 @@ button:hover {
 
 .controls {
   align-items: center;
-  background-color: #F5F6F6;
-  border: 1px #C5C8C8 solid;
+  background-color: #F7F5EB;
+  border: 1px #DFDDD4 solid;
   border-radius: 10px;
   display: flex;
   justify-content: space-around;
@@ -103,7 +103,7 @@ button:hover {
       left: 2px;
       top: 2px; }
     .mode-switch__bg + .mode-switch__slider::before {
-      background-color: #F5F6F6;
+      background-color: #F7F5EB;
       border-radius: 20px;
       right: 2px;
       transition: background 0.4s; }

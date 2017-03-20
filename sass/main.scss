@@ -2,7 +2,7 @@ $blue: #153ECA;
 $red: #CD4230;
 $green: #298E44;
 $yellow: #EFCF2E;
-$control-panel: #F5F6F6;
+$control-panel: #F7F5EB;
 $start-button: #FE9F8A;
 $strict-switch: #FCD647;
 
@@ -11,7 +11,7 @@ $strict-switch: #FCD647;
 }
 
 body {
-  background-color: #FDF5DA;
+  background-color: #FDFCF6;
   margin: 0;
 }
 
@@ -80,7 +80,7 @@ button:hover {
 .controls {
   align-items: center;
   background-color: $control-panel;
-  border: 1px #C5C8C8 solid;
+  border: 1px #DFDDD4 solid;
   border-radius: 10px;
   display: flex;
   justify-content: space-around;
