@@ -87,30 +87,35 @@ button:hover {
   width: 400px;
 }
 
-.count {
+.count,
+.strict {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 8px;
+}
 
-  &__number {
-    font: {
-      size: 1.7em;
-    }
+.count__number {
+  font: {
+    size: 1.7em;
   }
 }
 
-.start,
-.strict {
+.start {
   background-color: $control-panel;
   border-radius: 5px;
+  margin: 8px;
   padding: 5px 10px;
 }
 
 .start {
   border-color: $start-button;
   font-size: 18px;
+}
+
+.mode-switch {
+  margin-top: 5px;
 }
 
 .mode-switch__bg {

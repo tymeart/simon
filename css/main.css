@@ -58,24 +58,29 @@ button:hover {
   justify-content: space-around;
   width: 400px; }
 
-.count {
+.count,
+.strict {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 8px; }
-  .count__number {
-    font-size: 1.7em; }
 
-.start,
-.strict {
-  background-color: #F5F6F6;
+.count__number {
+  font-size: 1.7em; }
+
+.start {
+  background-color: #F7F5EB;
   border-radius: 5px;
+  margin: 8px;
   padding: 5px 10px; }
 
 .start {
   border-color: #FE9F8A;
   font-size: 18px; }
+
+.mode-switch {
+  margin-top: 5px; }
 
 .mode-switch__bg {
   display: none;
