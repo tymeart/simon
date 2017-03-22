@@ -29,24 +29,24 @@ button:hover {
   height: 200px;
   width: 200px; }
 
-.one {
+#one {
   background-color: #153ECA; }
-  .one:hover {
+  #one:hover {
     background-color: #4067eb; }
 
-.two {
+#two {
   background-color: #CD4230; }
-  .two:hover {
+  #two:hover {
     background-color: #dd7a6d; }
 
-.three {
+#three {
   background-color: #298E44; }
-  .three:hover {
+  #three:hover {
     background-color: #3dc762; }
 
-.four {
+#four {
   background-color: #EFCF2E; }
-  .four:hover {
+  #four:hover {
     background-color: #f4df75; }
 
 .controls {
@@ -99,13 +99,13 @@ button:hover {
       content: "";
       display: block;
       position: absolute;
-      bottom: 2px;
-      left: 2px;
-      top: 2px; }
+      bottom: 1px;
+      left: 1px;
+      top: 1px; }
     .mode-switch__bg + .mode-switch__slider::before {
       background-color: #F7F5EB;
       border-radius: 20px;
-      right: 2px;
+      right: 1px;
       transition: background 0.4s; }
     .mode-switch__bg + .mode-switch__slider::after {
       background-color: #FFF;
