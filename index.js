@@ -1,5 +1,10 @@
-var demoArr =[];
-var count = 1;
+var computerPlays =[];
+var count = 0;
+
+// increment count, update display
+count++;
+var countNumber = document.getElementById('count__number');
+// countNumber.innerHTML = count;
 
 // for each count, generate a random number, figure out next button that lights up based on number
 // add to sequence by pushing that button into an array
