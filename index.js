@@ -10,13 +10,13 @@ var countNumber = document.getElementById('count__number');
 // add to sequence by pushing that button into an array
 var random = Math.random();
 if (random < 0.25) {
-  demoArr.push('one');
+  computerPlays.push('blue');
 } else if (random < 0.5) {
-  demoArr.push('two');
+  computerPlays.push('red');
 } else if (random < 0.75) {
-  demoArr.push('three');
+  computerPlays.push('green');
 } else if (random < 1) {
-  demoArr.push('four');
+  computerPlays.push('yellow');
 }
 
 // go through that array, make the buttons light up
