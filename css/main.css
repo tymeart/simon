@@ -32,22 +32,22 @@ button:hover {
 #one {
   background-color: #153ECA; }
   #one:hover {
-    background-color: #4067eb; }
+    background-color: #5779ee; }
 
 #two {
   background-color: #CD4230; }
   #two:hover {
-    background-color: #dd7a6d; }
+    background-color: #e28c81; }
 
 #three {
   background-color: #298E44; }
   #three:hover {
-    background-color: #3dc762; }
+    background-color: #50cd72; }
 
 #four {
   background-color: #EFCF2E; }
   #four:hover {
-    background-color: #f4df75; }
+    background-color: #f6e58d; }
 
 .controls {
   align-items: center;
