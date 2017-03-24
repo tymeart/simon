@@ -21,9 +21,14 @@ if (random < 0.25) {
 
 // go through that array, make the buttons light up
   // add class to button and then remove it
-for (var i = 0; i < demoArr.length; i++) {
-  document.getElementById(`${demoArr[i]}`).classList.add('lightup');
-}
+computerPlays.map(function(play) {
+  var playBtn = document.getElementById(play);
+  playBtn.classList.add('lightup');
+  setTimeout(function() {
+    playBtn.classList.remove('lightup');
+  }, 1000);
+});
+
 
 // push user's button presses into an array
 // compare original light up array with user presses array
