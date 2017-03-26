@@ -1,9 +1,12 @@
 var computerPlays =[];
-var count = 0;
+var round = 0;
 
 function getComputerPlays() {
-  // for each count, generate a random number, figure out next button that will light up based on number
+  // for the first count, generate a random number, figure out next button that will light up based on number
   // add to sequence by pushing that button into an array
+
+  // what about each subsequent count??
+
   var random = Math.random();
   if (random < 0.25) {
     computerPlays.push('blue');
@@ -30,9 +33,9 @@ function runComputerPlays() {
 
 function startGame() {
   // increment count, update display
-  count++;
-  var countDisplay = document.getElementById('count__number');
-  countDisplay.innerHTML = count;
+  round++;
+  var roundDisplay = document.getElementById('round__number');
+  roundDisplay.innerHTML = round;
 
   getComputerPlays();
   runComputerPlays();
