@@ -48,37 +48,37 @@ button:hover {
 #blue {
   background-color: $blue;
 
-  &:hover {
-    background-color: lighten($blue, 20%);
-  }
+  // &:hover {
+  //   background-color: lighten($blue, 20%);
+  // }
 }
 
 #red {
   background-color: $red;
 
-  &:hover {
-    background-color: lighten($red, 20%);
-  }
+  // &:hover {
+  //   background-color: lighten($red, 20%);
+  // }
 }
 
 #green {
   background-color: $green;
 
-  &:hover {
-    background-color: lighten($green, 20%);
-  }
+  // &:hover {
+  //   background-color: lighten($green, 20%);
+  // }
 }
 
 #yellow {
   background-color: $yellow;
 
-  &:hover {
-    background-color: lighten($yellow, 20%);
-  }
+  // &:hover {
+  //   background-color: lighten($yellow, 20%);
+  // }
 }
 
 .lightup {
-
+  opacity: 0.5;
 }
 
 .controls {

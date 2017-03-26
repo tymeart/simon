@@ -29,25 +29,20 @@ button:hover {
   height: 200px;
   width: 200px; }
 
-#one {
+#blue {
   background-color: #153ECA; }
-  #one:hover {
-    background-color: #5779ee; }
 
-#two {
+#red {
   background-color: #CD4230; }
-  #two:hover {
-    background-color: #e28c81; }
 
-#three {
+#green {
   background-color: #298E44; }
-  #three:hover {
-    background-color: #50cd72; }
 
-#four {
+#yellow {
   background-color: #EFCF2E; }
-  #four:hover {
-    background-color: #f6e58d; }
+
+.lightup {
+  opacity: 0.5; }
 
 .controls {
   align-items: center;
