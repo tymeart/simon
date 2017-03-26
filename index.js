@@ -1,4 +1,5 @@
 var computerPlays =[];
+var userPlays = [];
 var round = 0;
 
 function getComputerPlays() {
@@ -40,8 +41,15 @@ function startGame() {
   getComputerPlays();
   runComputerPlays();
 
+  // on each of user's button clicks
   // push user's button presses into an array
   // compare original light up array with user presses array
+  var playBtns = document.querySelectorAll('playButton');
+  for (var j = 0; j < playBtns.length; j++) {
+    playBtns[j].addEventListener('click', function() {
+      userPlays.push(); // push the id of the button
+    });
+  }
 
   // link sounds to play button clicks
 }
