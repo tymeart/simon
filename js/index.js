@@ -45,11 +45,25 @@ function startGame() {
   // push user's button presses into an array
   // compare original light up array with user presses array
   var playBtns = document.querySelectorAll('playButton');
+
   for (var j = 0; j < playBtns.length; j++) {
     playBtns[j].addEventListener('click', function() {
-      userPlays.push(); // push the id of the button
+      playBtns[j].classList.add('lightup');
+      setTimeout(function() {
+        playBtns[j].classList.remove('lightup');
+      }, 1500);
+      userPlays.push(playBtns[j].id);
     });
   }
+
+  if (computerPlays === userPlays) {
+    // progress to the next round
+    // by recursively calling startGame?
+  } else {
+    // call runComputerPlays again
+    // check the 2 arrays again --> recursive?
+  }
+
 
   // link sounds to play button clicks
 }
