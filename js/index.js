@@ -2,6 +2,11 @@ var computerPlays =[];
 var userPlays = [];
 var round = 0;
 
+var blueSound = new Audio(['https://s3.amazonaws.com/freecodecamp/simonSound1.mp3']);
+var redSound = new Audio(['https://s3.amazonaws.com/freecodecamp/simonSound2.mp3']);
+var greenSound = new Audio(['https://s3.amazonaws.com/freecodecamp/simonSound3.mp3']);
+var yellowSound = new Audio(['https://s3.amazonaws.com/freecodecamp/simonSound4.mp3']);
+
 function getComputerPlays() {
   // for the first count, generate a random number, figure out next button that will light up based on number
   // add to sequence by pushing that button into an array
@@ -24,11 +29,41 @@ function runComputerPlays() {
   // go through that array, make the buttons light up
     // add class to button and then remove it
   computerPlays.map(function(play) {
-    var playBtn = document.getElementById(play);
-    playBtn.classList.add('lightup');
-    setTimeout(function() {
-      playBtn.classList.remove('lightup');
-    }, 1500);
+    var compPlayBtn = document.getElementById(play);
+
+    switch(play) {
+      case 'blue':
+        compPlayBtn.classList.add('lightup');
+        blueSound.play();
+        setTimeout(function() {
+          compPlayBtn.classList.remove('lightup');
+        }, 1500);
+        break;
+      case 'red':
+        compPlayBtn.classList.add('lightup');
+        redSound.play();
+        setTimeout(function() {
+          compPlayBtn.classList.remove('lightup');
+        }, 1500);
+        break;
+      case 'green':
+        compPlayBtn.classList.add('lightup');
+        greenSound.play();
+        setTimeout(function() {
+          compPlayBtn.classList.remove('lightup');
+        }, 1500);
+        break;
+      case 'yellow':
+        compPlayBtn.classList.add('lightup');
+        yellowSound.play();
+        setTimeout(function() {
+          compPlayBtn.classList.remove('lightup');
+        }, 1500);
+        break;
+      default:
+        console.log('Uh oh, something went wrong.');
+    }
+
   });
 }
 
@@ -49,6 +84,24 @@ function startGame() {
   for (var j = 0; j < playBtns.length; j++) {
     playBtns[j].addEventListener('click', function() {
       playBtns[j].classList.add('lightup');
+
+      switch(playBtns[j].id) {
+        case 'blue':
+          blueSound.play();
+          break;
+        case 'red':
+          redSound.play();
+          break;
+        case 'green':
+          greenSound.play();
+          break;
+        case 'yellow':
+          yellowSound.play();
+          break;
+        default:
+          console.log('Uh oh, something went wrong with the button you chose.');
+      }
+
       setTimeout(function() {
         playBtns[j].classList.remove('lightup');
       }, 1500);
