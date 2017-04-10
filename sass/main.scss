@@ -106,16 +106,13 @@ button:hover {
   }
 }
 
-.start {
+#start {
   background-color: $control-panel;
+  border-color: $start-button;
   border-radius: 5px;
+  font-size: 18px;
   margin: 8px;
   padding: 5px 10px;
-}
-
-.start {
-  border-color: $start-button;
-  font-size: 18px;
 }
 
 .mode-switch {

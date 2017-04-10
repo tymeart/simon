@@ -64,15 +64,13 @@ button:hover {
 #round__number {
   font-size: 1.7em; }
 
-.start {
+#start {
   background-color: #F7F5EB;
+  border-color: #FE9F8A;
   border-radius: 5px;
+  font-size: 18px;
   margin: 8px;
   padding: 5px 10px; }
-
-.start {
-  border-color: #FE9F8A;
-  font-size: 18px; }
 
 .mode-switch {
   margin-top: 5px; }
