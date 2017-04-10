@@ -73,7 +73,10 @@ function startGame() {
   var roundDisplay = document.getElementById('round__number');
   roundDisplay.innerHTML = round;
 
-  getComputerPlays();
+  // run getComputerPlays as many times as the number of plays the current round should have
+  for (var k = 0; k < round; k++) {
+    getComputerPlays();
+  }
   runComputerPlays();
 
   // on each of user's button clicks
@@ -116,7 +119,4 @@ function startGame() {
     // call runComputerPlays again
     // check the 2 arrays again --> recursive?
   }
-
-
-  // link sounds to play button clicks
 }
