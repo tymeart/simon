@@ -84,7 +84,7 @@ function startGame() {
   // compare original light up array with user presses array
   var playBtns = document.querySelectorAll('playButton');
 
-  for (var j = 0; j < playBtns.length; j++) {
+  for (let j = 0; j < playBtns.length; j++) {
     playBtns[j].addEventListener('click', function() {
       playBtns[j].classList.add('lightup');
 
