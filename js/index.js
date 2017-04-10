@@ -104,19 +104,15 @@ function startGame() {
         default:
           console.log('Uh oh, something went wrong with the button you chose.');
       }
-
       setTimeout(function() {
         playBtns[j].classList.remove('lightup');
       }, 1500);
       userPlays.push(playBtns[j].id);
-    });
-  }
 
-  if (computerPlays === userPlays) {
-    // progress to the next round
-    // by recursively calling startGame?
-  } else {
-    // call runComputerPlays again
-    // check the 2 arrays again --> recursive?
+      // check if last item in userPlays matches the item at the same index in computerPlays
+      if (computerPlays[j] !== userPlays[j]) {
+        break;
+      }
+    });
   }
 }
