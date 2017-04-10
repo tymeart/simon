@@ -2,16 +2,24 @@ var computerPlays =[];
 var userPlays = [];
 var round = 0;
 
+var strict = false;
+var strictModeSwitch = document.querySelector('input[type=checkbox]');
+strictModeSwitch.addEventListener('change', function() {
+  if (strictModeSwitch.checked) {
+    strict = true;
+  } else {
+    strict = false;
+  }
+});
+
 var blueSound = new Audio(['https://s3.amazonaws.com/freecodecamp/simonSound1.mp3']);
 var redSound = new Audio(['https://s3.amazonaws.com/freecodecamp/simonSound2.mp3']);
 var greenSound = new Audio(['https://s3.amazonaws.com/freecodecamp/simonSound3.mp3']);
 var yellowSound = new Audio(['https://s3.amazonaws.com/freecodecamp/simonSound4.mp3']);
 
 function getComputerPlays() {
-  // for the first count, generate a random number, figure out next button that will light up based on number
+  // generate a random number, figure out next button that will light up based on number
   // add to sequence by pushing that button into an array
-
-  // what about each subsequent count??
 
   var random = Math.random();
   if (random < 0.25) {
@@ -111,7 +119,11 @@ function startGame() {
 
       // check if last item in userPlays matches the item at the same index in computerPlays
       if (computerPlays[j] !== userPlays[j]) {
-        break;
+        if (strict === true) {
+          break;
+        } else {
+          runComputerPlays();
+        }
       }
     });
   }
